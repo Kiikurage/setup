@@ -76,6 +76,12 @@ properties:
         id: Valve.Steam
         source: winget
 
+    - id: EpicGamesLauncherのインストール
+      resource: Microsoft.WinGet.DSC/WinGetPackage
+      settings:
+        id: EpicGames.EpicGamesLauncher
+        source: winget
+
     # https://learn.microsoft.com/ja-jp/windows/powertoys/dsc-configure 
     - id: PowerToysの設定
       resource: Microsoft.PowerToys.Configure/PowerToysConfigure
@@ -120,3 +126,4 @@ properties:
           Enabled: false
         PowerLauncher:
           Enabled: false
+
