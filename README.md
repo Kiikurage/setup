@@ -11,7 +11,7 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Kiikurage/setup/refs/h
 
 ## TODO
 
-今後自動化した項目
+今後自動化したい項目
 
 - JetBrains ToolBoxからRiderをインストール
 - PowerToys設定
@@ -19,4 +19,3 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Kiikurage/setup/refs/h
     - Keyboard Managerのショートカット再マップ
         - `Win+Space` を `Alt+チルダ` へ
 - Microsoft IMEの削除
-- 
