@@ -6,11 +6,10 @@
 
 ```powershell
 # Powershell
-winget configure --enable    
-winget configure 
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Kiikurage/setup/refs/heads/master/configuration.dsc.yml" -OutFile "$env:TEMP\config.yml"; winget configure "$env:TEMP\config.yml"
 ```
 
-5. 自動化できていない項目
+3. 自動化できていない項目
 
 - 1passwordのログイン
 - JetBrains ToolBoxからRiderをインストール

@@ -120,12 +120,3 @@ properties:
           Enabled: false
         PowerLauncher:
           Enabled: false
-
-    - id: Micorsoft IMEの削除
-      resource: Microsoft.WinGet.DSC/WindowsCapability
-      dependsOn:
-        - Google日本語入力のインストール
-      settings:
-        Name: Microsoft.Windows.Ime.Japanese~~~ja-JP~0.0.1.0
-        Ensure: Absent
-
