@@ -94,7 +94,7 @@ properties:
         id: Valve.Steam
         source: winget
 
-    - id: EpicGamesLauncherのインストール
+    - id: Epic Games Launcherのインストール
       resource: Microsoft.WinGet.DSC/WinGetPackage
       settings:
         id: EpicGames.EpicGamesLauncher
