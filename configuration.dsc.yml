@@ -43,7 +43,7 @@ properties:
     - id: Google日本語入力のインストール
       resource: Microsoft.WinGet.DSC/WinGetPackage
       settings:
-        id: AgileBits.1Password
+        id: Google.JapaneseIME
         source: winget
 
     - id: VSCodeのインストール
@@ -126,4 +126,5 @@ properties:
           Enabled: false
         PowerLauncher:
           Enabled: false
+
 
