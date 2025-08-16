@@ -18,3 +18,5 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Kiikurage/setup/refs/h
     - すべてのモジュールを一旦無効化
     - Keyboard Managerのショートカット再マップ
         - `Win+Space` を `Alt+チルダ` へ
+- Microsoft IMEの削除
+- 
