@@ -1,6 +1,24 @@
 properties:
   configurationVersion: 0.2.0
   resources:
+    - id: 隠しファイルを表示
+      resource: PSDscResources/Registry
+      settings:
+        Key: HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced
+        ValueName: Hidden
+        ValueType: Dword
+        ValueData: 1
+        Force: true
+    
+    - id: 拡張子を表示
+      resource: PSDscResources/Registry
+      settings:
+        Key: HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced
+        ValueName: HideFileExt
+        ValueType: Dword
+        ValueData: 0
+        Force: true
+    
     - id: タスクバーの検索ボックスを非表示に
       resource: PSDscResources/Registry
       settings:
@@ -126,5 +144,6 @@ properties:
           Enabled: false
         PowerLauncher:
           Enabled: false
+
 
 
