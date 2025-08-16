@@ -1,0 +1,40 @@
+---
+- name: Setup Windows environment
+  hosts: all
+  tasks:
+    - name: '[winget] インストール済みのアプリケーションの確認'
+      ansible.windows.win_command: winget list
+      register: winget_app_list
+      ignore_errors: yes
+
+    - name: '[winget] 1Password'
+      ansible.windows.win_command: winget install --id AgileBits.1Password --silent --accept-package-agreements --accept-source-agreements
+      when: "'AgileBits.1Password' not in winget_app_list.stdout"
+
+    - name: '[winget] Google Chrome'
+      ansible.windows.win_command: winget install --id Google.Chrome --silent --accept-package-agreements --accept-source-agreements
+      when: "'Google.Chrome' not in winget_app_list.stdout"
+
+    - name: '[winget] Google JapaneseIME'
+      ansible.windows.win_command: winget install --id Google.JapaneseIME --silent --accept-package-agreements --accept-source-agreements
+      when: "'Google.JapaneseIME' not in winget_app_list.stdout"
+
+    - name: '[winget] VSCode'
+      ansible.windows.win_command: winget install --id Microsoft.VisualStudioCode --silent --accept-package-agreements --accept-source-agreements
+      when: "'Microsoft.VisualStudioCode' not in winget_app_list.stdout"
+
+    - name: '[winget] Visual Studio 2022 Community'
+      ansible.windows.win_command: winget install --id Microsoft.VisualStudio.2022.Community --silent --accept-package-agreements --accept-source-agreements
+      when: "'Microsoft.VisualStudio.2022.Community' not in winget_app_list.stdout"
+
+    - name: '[winget] PowerToys'
+      ansible.windows.win_command: winget install --id Microsoft.PowerToys --silent --accept-package-agreements --accept-source-agreements
+      when: "'Microsoft.PowerToys' not in winget_app_list.stdout"
+
+    - name: '[winget] JetBrains Toolbox'
+      ansible.windows.win_command: winget install --id JetBrains.Toolbox  --silent --accept-package-agreements --accept-source-agreements
+      when: "'JetBrains.Toolbox' not in winget_app_list.stdout"
+
+    - name: '[winget] Steam'
+      ansible.windows.win_command: winget install --id Valve.Steam --silent --accept-package-agreements --accept-source-agreements
+      when: "'Valve.Steam' not in winget_app_list.stdout"
