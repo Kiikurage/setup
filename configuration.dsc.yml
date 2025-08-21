@@ -1,6 +1,20 @@
 properties:
   configurationVersion: 0.2.0
   resources:
+    - id: 「ホーム」メニューを非表示に
+      resource: PSDscResources/Registry
+      settings:
+        Key: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\{f874310e-b6b7-47dc-bc84-b9e6b38f5903}
+        ValueName: ""
+        Force: true
+    
+    - id: 「ギャラリー」メニューを非表示に
+      resource: PSDscResources/Registry
+      settings:
+        Key: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\{e88865ea-0e1c-4e20-9aa6-edcd0212c87c}
+        ValueName: ""
+        Force: true
+
     - id: 隠しファイルを表示
       resource: PSDscResources/Registry
       settings:
