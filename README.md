@@ -29,6 +29,7 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Kiikurage/setup/refs/h
     - JetBrains Toolbox
     - Steam
     - Epic Games Launcher
+    - OBS
 - PowerToysの設定
     - いらないモジュールの無効化
 
