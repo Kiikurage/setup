@@ -20,6 +20,7 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Kiikurage/setup/refs/h
     - タスクバーの検索ボックスを非表示に
     - タスクバーの「タスクビュー」アイコンを非表示に
     - タスクバーのウィジェットを非表示に
+    - エクスプローラの右クリックメニューを昔のものにする
 - アプリのインストール
     - 1Password
     - Google Chrome
