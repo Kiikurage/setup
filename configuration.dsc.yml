@@ -120,6 +120,12 @@ properties:
         id: OBSProject.OBSStudio
         source: winget
 
+    - id: Spotifyのインストール
+      resource: Microsoft.WinGet.DSC/WinGetPackage
+      settings:
+        id: Spotify.Spotify
+        source: winget
+
     # https://learn.microsoft.com/ja-jp/windows/powertoys/dsc-configure 
     - id: PowerToysの設定
       resource: Microsoft.PowerToys.Configure/PowerToysConfigure

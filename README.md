@@ -30,6 +30,7 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Kiikurage/setup/refs/h
     - Steam
     - Epic Games Launcher
     - OBS
+    - Spotify
 - PowerToysの設定
     - いらないモジュールの無効化
 
